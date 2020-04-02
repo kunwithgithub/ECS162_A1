@@ -1,0 +1,235 @@
+html{
+    background-color: #c6d2da;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-flow: column;
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    word-wrap: break-word;
+    font-size: 15px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+main > article > header{
+    text-align: center;
+}
+
+main > article{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    word-wrap: break;
+}
+
+main > article > section{
+    text-align: justify;
+}
+
+
+
+.sk_navbar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    justify-content: space-around;
+    
+}
+
+.sk_navbar > .sk_navbar_title{
+    display: block;
+    flex-basis:80%;
+    padding:1em;
+    color: #2a2d7c;
+}
+
+
+.sk_navbar > .sk_navbar_item{
+    flex-basis: 5%;
+    text-decoration: none;
+}
+
+.sk_navbar > .sk_navbar_item > a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.sk_navbar_highlighter{
+    color:#c9523d;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+}
+
+.sk_decrementer{
+    background-color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.sk_decrementer > h2{
+    font-weight: lighter;
+    color: #f2f2f2;
+}
+
+.sk_footer{
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #c6d2da;
+    font-size: 10px;
+}
+
+
+.sk_footer > div > ul{
+    list-style-type:none;
+    padding: 0px;
+}
+
+.sk_carousel{
+    background-color: #000000;
+    background-image: url("./../assets/fabric.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    flex-flow: row;
+    height: 30em;
+    width: 50em;
+    align-items: center;
+    text-align: center;
+}
+
+.sk_carousel > .sk_carousel_control{
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: transparent;
+    flex-wrap: wrap;
+    color: #f2f2f2;
+    opacity: 1;
+    transition: 0.3s;
+    border: none;
+    flex-basis:5%;
+    transition: 0.3s;
+}
+
+.sk_carousel > div{
+    flex-basis: 90%;
+}
+
+
+.sk_carousel > .sk_carousel_control:active{
+    opacity: 0.6;
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.sk_carousel > .sk_carousel_control:hover{
+    opacity: 0.6;
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.sk_carousel_control_panel{
+    display: flex;
+    flex-flow: row;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.sk_carousel_control_panel > .sk_carousel_control_panel_item:active{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    background-color:#778a93;
+}
+
+.sk_carousel_control_panel > .sk_carousel_control_panel_item{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    background-color:#babfbb;
+}
+
+@media only screen and (max-width: 768px){
+
+    .sk_carousel{
+        background-color: #000000;
+        background-image: url("./../assets/fabric.jpg");
+        background-size: 100% 100%;
+        display: flex;
+        flex-flow: row;
+        height: 40vh;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+.sk_navbar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100vw;
+    padding-left: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    padding-right: 3vw;
+    justify-content: space-around;
+    
+}
+    .sk_navbar > .sk_navbar_title{
+        display: block;
+        flex-basis:100%;
+        font-size: 3vw;
+        padding:1em;
+        color: #2a2d7c;
+        align-items: center;
+    }
+    
+    
+    .sk_navbar > .sk_navbar_item{
+        flex-basis: 33%;
+        text-decoration: none;
+        font-size: 5vw;
+    }
+    main{
+        word-wrap: break-word;
+        font-size: 15px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .sk_footer{
+        display:flex;
+        flex-flow: column-reverse;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: justify;
+        background-color: #c6d2da;
+        font-size: 10px;
+        word-wrap: break;
+    }
+    
+    
+    .sk_footer > div > ul{
+        list-style-type:none;
+        padding: 0px;
+    }
+
+}
